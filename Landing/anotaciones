@@ -1,0 +1,577 @@
+<h1> SoloQ/ Flex</h1>
+        <h1>Estoy en:</h1>
+        <div class="container-slider">
+
+            <div class="csslider infinity" id="slider1">
+                <input type="radio" name="slides" id="slides_1" checked="checked" />
+                <input type="radio" name="slides" id="slides_2" />
+                <input type="radio" name="slides" id="slides_3" />
+                <input type="radio" name="slides" id="slides_4" />
+                <input type="radio" name="slides" id="slides_5" />
+                <input type="radio" name="slides" id="slides_6" />
+                <input type="radio" name="slides" id="slides_7" />
+                <input type="radio" name="slides" id="slides_8" />
+                <input type="radio" name="slides" id="slides_9" />
+
+                <ul>
+                    <li>
+                        <div class="content-center">
+
+                            <img src="img/iron.png" alt="" id="foto" width="200">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-center">
+
+                            <img src="img/bronce.png" alt="" id="foto" width="200">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-center">
+
+                            <img src="img/silver.png" alt="" id="foto" width="200">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-center">
+
+                            <img src="img/oro.png" alt="" id="foto" width="200">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-center">
+
+                            <img src="img/platino.png" alt="" id="foto" width="200">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-center">
+
+                            <img src="img/diamante.png" alt="" id="foto" width="200">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-center">
+
+                            <img src="img/Master.png" alt="" id="foto" width="200">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-center">
+
+                            <img src="img/grandmaster.png" alt="" id="foto" width="200">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-center">
+
+                            <img src="img/challenger.png" alt="" id="foto" width="200">
+
+                        </div>
+                    </li>
+                </ul>
+                <div class="arrows">
+                    <label for="slides_1"></label>
+                    <label for="slides_2"></label>
+                    <label for="slides_3"></label>
+                    <label for="slides_4"></label>
+                    <label for="slides_5"></label>
+                    <label for="slides_6"></label>
+                    <label for="slides_7"></label>
+                    <label for="slides_8"></label>
+                    <label for="slides_9"></label>
+                    <label class="goto-first" for="slides_1"></label>
+                    <label class="goto-last" for="slides_9"></label>
+                </div>
+
+            </div>
+            <div class="container-slider">
+                <div class="csslider infinity" id="slider2">
+                    <input type="radio" name="sld" id="sld1" checked="checked" />
+                    <input type="radio" name="sld" id="sld2" />
+                    <input type="radio" name="sld" id="sld3" />
+                    <input type="radio" name="sld" id="sld4" />
+
+                    <ul>
+                        <li>
+                            <div class="content-center">
+
+                                <h1 id="4">4</h1>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-center">
+
+                                <h1 id="3">3</h1>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-center">
+
+                                <h1 id="2">2</h1>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-center">
+
+                                <h1 id="1">1</h1>
+
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="arrows">
+                        <label for="sld1"></label>
+                        <label for="sld2"></label>
+                        <label for="sld3"></label>
+                        <label for="sld4"></label>
+
+                        <label class="goto-first" for="sld1"></label>
+                        <label class="goto-last" for="sld4"></label>
+                    </div>
+
+
+
+                </div>
+
+                <h1>Quiero llegar a:</h1>
+                <div class="container-slider">
+                    <div class="csslider infinity" id="slider3">
+                        <input type="radio" name="slide" id="slides1" checked="checked" />
+                        <input type="radio" name="slide" id="slides2" />
+                        <input type="radio" name="slide" id="slides3" />
+                        <input type="radio" name="slide" id="slides4" />
+                        <input type="radio" name="slide" id="slides5" />
+                        <input type="radio" name="slide" id="slides6" />
+                        <input type="radio" name="slide" id="slides7" />
+                        <input type="radio" name="slide" id="slides8" />
+                        <input type="radio" name="slide" id="slides9" />
+                        <ul>
+                            <li>
+                                <div class="content-center">
+
+                                    <img src="img/iron.png" alt="" width="200">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-center">
+
+                                    <img src="img/bronce.png" alt="" width="200">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-center">
+
+                                    <img src="img/silver.png" alt="" width="200">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-center">
+
+                                    <img src="img/oro.png" alt="" id="foto" width="200">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-center">
+
+                                    <img src="img/platino.png" alt="" id="foto" width="200">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-center">
+
+                                    <img src="img/diamante.png" alt="" id="foto" width="200">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-center">
+
+                                    <img src="img/Master.png" alt="" id="foto" width="200">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-center">
+
+                                    <img src="img/grandmaster.png" alt="" id="foto" width="200">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-center">
+
+                                    <img src="img/challenger.png" alt="" id="foto" width="200">
+
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="arrows">
+                            <label for="slides1"></label>
+                            <label for="slides2"></label>
+                            <label for="slides3"></label>
+                            <label for="slides4"></label>
+                            <label for="slides5"></label>
+                            <label for="slides6"></label>
+                            <label for="slides7"></label>
+                            <label for="slides8"></label>
+                            <label for="slides9"></label>
+                            <label class="goto-first" for="slides1"></label>
+                            <label class="goto-last" for="slides9"></label>
+                        </div>
+                    </div>
+                    <div class="container-slider">
+                        <div class="csslider infinity" id="slider2">
+                            <input type="radio" name="slde" id="slde1" checked="checked" />
+                            <input type="radio" name="slde" id="slde2" />
+                            <input type="radio" name="slde" id="slde3" />
+                            <input type="radio" name="slde" id="slde4" />
+
+                            <ul>
+                                <li>
+                                    <div class="content-center">
+
+                                        <h1>4</h1>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content-center">
+
+                                        <h1>3</h1>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content-center">
+
+                                        <h1>2</h1>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content-center">
+
+                                        <h1>1</h1>
+
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <div class="arrows">
+                                <label for="slde1"></label>
+                                <label for="slde2"></label>
+                                <label for="slde3"></label>
+                                <label for="slde4"></label>
+
+                                <label class="goto-first" for="slde1"></label>
+                                <label class="goto-last" for="slde4"></label>
+                            </div>
+
+                            <a href="https://api.whatsapp.com/send?phone=5493416291344&text=Hola!%20Vengo%20de%20la%20pagina%2C%20queria%20contrata%20boost%20de%20soloQ"><button id="contratar">Contratar</button> </a>
+
+                        </div>
+                        <div class="col-md12">
+                            <h1>DuoBoost </h1>
+                            <h2 style="color: white;">Estoy en:</h2>
+
+
+                        </div>
+                        <div class="container-slider">
+                            <div class="csslider infinity" id="slider5">
+                                <input type="radio" name="sl" id="sl1" checked="checked" />
+                                <input type="radio" name="sl" id="sl2" />
+                                <input type="radio" name="sl" id="sl3" />
+                                <input type="radio" name="sl" id="sl4" />
+                                <input type="radio" name="sl" id="sl5" />
+                                <input type="radio" name="sl" id="sl6" />
+                                <input type="radio" name="sl" id="sl7" />
+                                <input type="radio" name="sl" id="sl8" />
+                                <input type="radio" name="sl" id="sl9" />
+                                <ul>
+                                    <li>
+                                        <div class="content-center">
+
+                                            <img src="img/iron.png" alt="" width="200">
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="content-center">
+
+                                            <img src="img/bronce.png" alt="" width="200">
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="content-center">
+
+                                            <img src="img/silver.png" alt="" width="200">
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="content-center">
+
+                                            <img src="img/oro.png" alt="" id="foto" width="200">
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="content-center">
+
+                                            <img src="img/platino.png" alt="" id="foto" width="200">
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="content-center">
+
+                                            <img src="img/diamante.png" alt="" id="foto" width="200">
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="content-center">
+
+                                            <img src="img/Master.png" alt="" id="foto" width="200">
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="content-center">
+
+                                            <img src="img/grandmaster.png" alt="" id="foto" width="200">
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="content-center">
+
+                                            <img src="img/challenger.png" alt="" id="foto" width="200">
+
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="arrows">
+                                    <label for="sl1"></label>
+                                    <label for="sl2"></label>
+                                    <label for="sl3"></label>
+                                    <label for="sl4"></label>
+                                    <label for="sl5"></label>
+                                    <label for="sl6"></label>
+                                    <label for="sl7"></label>
+                                    <label for="sl8"></label>
+                                    <label for="sl9"></label>
+                                    <label class="goto-first" for="sl1"></label>
+                                    <label class="goto-last" for="sl9"></label>
+                                </div>
+
+                            </div>
+                            <div class="container-slider">
+                                <div class="csslider infinity" id="slider2">
+                                    <input type="radio" name="ss" id="ss1" checked="checked" />
+                                    <input type="radio" name="ss" id="ss2" />
+                                    <input type="radio" name="ss" id="ss3" />
+                                    <input type="radio" name="ss" id="ss4" />
+
+                                    <ul>
+                                        <li>
+                                            <div class="content-center">
+
+                                                <h1>4</h1>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="content-center">
+
+                                                <h1>3</h1>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="content-center">
+
+                                                <h1>2</h1>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="content-center">
+
+                                                <h1>1</h1>
+
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                    <div class="arrows">
+                                        <label for="ss1"></label>
+                                        <label for="ss2"></label>
+                                        <label for="ss3"></label>
+                                        <label for="slde4"></label>
+
+                                        <label class="goto-first" for="ss1"></label>
+                                        <label class="goto-last" for="ss4"></label>
+                                    </div>
+
+
+
+                                </div>
+                                <h1> Quiero llegar a</h1>
+                                <div class="container-slider">
+                                    <div class="csslider infinity" id="slider6">
+                                        <input type="radio" name="sdl" id="sdl1" checked="checked" />
+                                        <input type="radio" name="sdl" id="sdl2" />
+                                        <input type="radio" name="sdl" id="sdl3" />
+                                        <input type="radio" name="sdl" id="sdl4" />
+                                        <input type="radio" name="sdl" id="sdl5" />
+                                        <input type="radio" name="sdl" id="sdl6" />
+                                        <input type="radio" name="sdl" id="sdl7" />
+                                        <input type="radio" name="sdl" id="sdl8" />
+                                        <input type="radio" name="sdl" id="sdl9" />
+                                        <ul>
+                                            <li>
+                                                <div class="content-center">
+
+                                                    <img src="img/iron.png" alt="" width="200">
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="content-center">
+
+                                                    <img src="img/bronce.png" alt="" width="200">
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="content-center">
+
+                                                    <img src="img/silver.png" alt="" width="200">
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="content-center">
+
+                                                    <img src="img/oro.png" alt="" id="foto" width="200">
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="content-center">
+
+                                                    <img src="img/platino.png" alt="" id="foto" width="200">
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="content-center">
+
+                                                    <img src="img/diamante.png" alt="" id="foto" width="200">
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="content-center">
+
+                                                    <img src="img/Master.png" alt="" id="foto" width="200">
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="content-center">
+
+                                                    <img src="img/grandmaster.png" alt="" id="foto" width="200">
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="content-center">
+
+                                                    <img src="img/challenger.png" alt="" id="foto" width="200">
+
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="arrows">
+                                            <label for="sdl1"></label>
+                                            <label for="sdl2"></label>
+                                            <label for="sdl3"></label>
+                                            <label for="sdl4"></label>
+                                            <label for="sdl5"></label>
+                                            <label for="sdl6"></label>
+                                            <label for="sdl7"></label>
+                                            <label for="sdl8"></label>
+                                            <label for="sdl9"></label>
+                                            <label class="goto-first" for="sdl1"></label>
+                                            <label class="goto-last" for="sdl9"></label>
+                                        </div>
+
+                                    </div>
+                                    <div class="container-slider">
+                                        <div class="csslider infinity" id="slider2">
+                                            <!--Sliders divisones-->
+                                            <input type="radio" name="ssd" id="ssd1" checked="checked" />
+                                            <input type="radio" name="ssd" id="ssd2" />
+                                            <input type="radio" name="ssd" id="ssd3" />
+                                            <input type="radio" name="ssd" id="ssd4" />
+
+                                            <ul>
+                                                <li>
+                                                    <div class="content-center">
+
+                                                        <h1>4</h1>
+
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="content-center">
+
+                                                        <h1>3</h1>
+
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="content-center">
+
+                                                        <h1>2</h1>
+
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="content-center">
+
+                                                        <h1>1</h1>
+
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                            <div class="arrows">
+                                                <label for="ssd1"></label>
+                                                <label for="ssd2"></label>
+                                                <label for="ssd3"></label>
+                                                <label for="ssd4"></label>
+
+                                                <label class="goto-first" for="ssd1"></label>
+                                                <label class="goto-last" for="ssd4"></label>
+                                            </div>

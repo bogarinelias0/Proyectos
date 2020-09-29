@@ -1,0 +1,10 @@
+setTimeout(function() {
+    setInterval(function() {
+        $('#img1').attr('src', $('#img1').attr('src'))
+    }, 1)
+}, 4000)
+setTimeout(function() {
+    setInterval(function() {
+        $('#img2').attr('src', $('#img2').attr('src'))
+    }, 1)
+}, 2600)
