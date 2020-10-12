@@ -1,0 +1,7 @@
+.carousel-item img {
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

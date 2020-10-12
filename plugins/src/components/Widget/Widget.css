@@ -1,0 +1,35 @@
+.container_widget {
+    width: 50%;
+    background-color: #000000;
+    margin: auto;
+}
+
+.container_widget h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.container_ss {
+    margin: 20px 0 20px;
+}
+
+.carousel-control-prev {
+    margin-left: -100px;
+}
+
+.carousel-control-next {
+    margin-right: -100px;
+}
+
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+    color: green;
+}
+
+.container {
+    background-color: #000000;
+}
+
+.carousel-control-prev.hide,
+.carousel-control-next.hide {
+    visibility: hidden;
+}
