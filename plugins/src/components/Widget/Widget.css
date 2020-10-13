@@ -26,7 +26,8 @@
 }
 
 .container {
-    background-color: #000000;
+    /**background-color: #000000;*/
+    background-image: url('../../../img/backgroundterminosycondiciones.jpg');
 }
 
 .carousel-control-prev.hide,
