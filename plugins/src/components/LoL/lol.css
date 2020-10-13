@@ -1,0 +1,9 @@
+.lolcontainer{
+    margin-top: 100px;
+}
+.backgroundlol{
+    background-color: rgb(58, 16, 156);
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}

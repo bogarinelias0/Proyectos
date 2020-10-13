@@ -3,6 +3,7 @@ import { divisions } from '../../constants/divisions';
 import { leagues } from '../../constants/leagues';
 import LoLPricing from '../LoLPricing';
 import LoLSelector from '../LoLSelector';
+import './lol.css'
 const LABEL_LIGA_ACTUAL_PREGUNTA = '¿En qué liga te encontrás?';
 const LABEL_LIGA_SIGUIENTE_PREGUNTA = '¿A cual liga queres llegar?';
 
@@ -29,33 +30,35 @@ const Lol = () => {
     };
 
     return(
-        <div className='container'>
-            <LoLSelector 
-                label={LABEL_LIGA_ACTUAL_PREGUNTA}
-                leagueSelector='leagueFrom'
-                onLeagueChange={updateCurrentLeague}
-                currentLeague={currentLeague}
-                divisionSelector='divisionFrom'
-                currentDivision={currentDivision}
-                onDivisionChange={updateCurrentDivision}
-            />
-
-            <LoLSelector 
-                label={LABEL_LIGA_SIGUIENTE_PREGUNTA}
-                currentLeague={nextLeague}
-                leagueSelector='leagueTo'
-                onLeagueChange={updateNextLeague}
-                divisionSelector='divisionTo'
-                currentDivision={nextDivision}
-                onDivisionChange={updateNextDivision}
-            />
-            <LoLPricing
-                currentLeague={leagues[currentLeague]}
-                currentDivision={divisions[currentDivision]}
-                nextLeague={leagues[nextLeague]}
-                nextDivision={divisions[nextDivision]}
-            />
+        <div className='backgroundlol'>
+            <div className='container'>
+                <LoLSelector 
+                    label={LABEL_LIGA_ACTUAL_PREGUNTA}
+                    leagueSelector='leagueFrom'
+                    onLeagueChange={updateCurrentLeague}
+                    currentLeague={currentLeague}
+                    divisionSelector='divisionFrom'
+                    currentDivision={currentDivision}
+                    onDivisionChange={updateCurrentDivision}
+                />
+                <LoLSelector 
+                    label={LABEL_LIGA_SIGUIENTE_PREGUNTA}
+                    currentLeague={nextLeague}
+                    leagueSelector='leagueTo'
+                    onLeagueChange={updateNextLeague}
+                    divisionSelector='divisionTo'
+                    currentDivision={nextDivision}
+                    onDivisionChange={updateNextDivision}
+                />
+                <LoLPricing
+                    currentLeague={leagues[currentLeague]}
+                    currentDivision={divisions[currentDivision]}
+                    nextLeague={leagues[nextLeague]}
+                    nextDivision={divisions[nextDivision]}
+                />
+            </div>
         </div>
+      
     );
 };
 

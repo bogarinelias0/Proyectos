@@ -27,7 +27,7 @@ export const leagues = [{
     name:'gold',
     img: {
         alt:'gold',
-        src: 'img/grandmaster.png',
+        src: 'img/oro.png',
         width:'100'
     }
 }, {
