@@ -1,0 +1,68 @@
+.background-titles-coachval{
+    background-image: url('../../../img/valorant/sagev.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-width: 700px;
+    height: 600px;
+}
+.title-coachlol h1{
+    font-size: 4.5vw;
+    letter-spacing: 3px;
+    font-family: fantasy;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+.sesiones-valorant p{
+    font-size: 5vw;
+    font-style: oblique;
+    font-family: Roboto,fantasy;
+}
+.sesiones-val-parraf{
+    float: left;
+    font-size: 4vw;
+    font-style: oblique;
+    font-family: Roboto, fantasy;
+}
+.botones-contratar-coach{
+    letter-spacing: 3px;
+    position: absolute;
+    margin-left: 21%;
+    width: 200px;
+    margin-top: 4%;
+}
+.botones-contratar-coach a{
+    width: 120px;
+    margin-right: 55%;
+    font-size: 3.7vw;
+    border-radius: 15px;
+    border: 3px solid rgba(216, 84, 7, 0.979);
+    color: coral;
+    background-color: white;
+}
+.botones-contratar-coach a:hover{
+    cursor: pointer;
+    color: white;
+    background-color: tomato;
+}
+.botoncontratar-2{
+    position: absolute;
+    margin-left: 21%;
+    width: 200px;
+    margin-top: 19%;
+}
+.botoncontratar-2 a{
+    width: 120px;
+    margin-right: 55%;
+    font-size: 3.7vw;
+    letter-spacing: 3px;
+    border-radius: 15px;
+    border: 3px solid rgba(216, 84, 7, 0.979);
+    color: coral;
+    background-color: white;
+}
+.botoncontratar-2 a:hover{
+    cursor: pointer;
+    color: white;
+    background-color: tomato;
+}

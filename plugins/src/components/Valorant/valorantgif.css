@@ -1,0 +1,32 @@
+.backgroundvalorantgif{
+    background-image: url('../../../img/valorant/gifval.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-width: 100%;
+    min-height: 850px;
+}
+.titulovalorantingif{
+    background-color: black;
+    width: 100%;
+}
+.titulovalorantingif h1{
+    margin: 0;
+    padding: 0;
+    color: brown;
+}
+.titleendvalorant{
+    background: none;
+    margin-top: 50%;
+}
+.titleendvalorant h1{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(12, 116, 47);
+}
+.titleendvalorant h2{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(12, 116, 47);
+}

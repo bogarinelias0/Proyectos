@@ -1,0 +1,26 @@
+.cuentascs{
+    background-image: url('../../../img/ventacuentascsgo.jpg');
+    min-width: 400px;
+    min-height: 750px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+.comprar-cuentas-cs{
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 58%;
+}
+.comprar-items{
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 58%;
+}
+.comprar-items h1{
+    font-family: Roboto,sans-serif;
+}
+.comprar-cuentas-cs h1{
+    font-family: Roboto,sans-serif;
+}

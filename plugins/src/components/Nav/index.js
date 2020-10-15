@@ -3,30 +3,32 @@ import './nav.css'
 
 const Nav = () => {
     return (
-        <div className="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
-            <div className="navbar-header">
-                <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span className="sr-only"></span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
                     </button>
-                <a className="navbar-brand scrollTo" href="#intro">Elo Boost Academy</a>
-            </div>
+                    <a class="navbar-brand scrollTo" href="#intro">Landing Page</a>
+                </div>
+                <div class="navbar-collapse collapse" id="navigation">
 
-            <div className="navbar-collapse collapse" id="navigation">
-
-                <ul className="nav navbar-nav navbar-right">
-                    <li className="active"><a href="#intro">League Of Legends</a>
-                    </li>
-                    <li><a href="#valorant">Valorant</a>
-                    </li>
-                    <li><a href="#csgo">Counter Strike G O</a>
-                    </li>
-                    <li><a href="#tftcontainer">Team Fight Tactics</a>
-                    </li>
-                    <li><a href="#footer"> Contactanos</a></li>
-                </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#intro">Intro</a>
+                        </li>
+                        <li><a href="#section1">Why Bootstrapious</a>
+                        </li>
+                        <li><a href="#section2">About us</a>
+                        </li>
+                        <li><a href="#section3">Testimonials</a>
+                        </li>
+                        <li><a href="#section4">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     )
