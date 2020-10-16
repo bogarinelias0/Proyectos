@@ -40,4 +40,8 @@
 .navbar-logo_name {
   position: absolute;
   padding: 30px 15px;
+  color: #6aae7a;
+}
+#EBA{
+  border-radius: 100px;
 }

@@ -5,7 +5,7 @@ const Nav = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <a className="navbar-brand" href="#">
-                <img src="img/logoEBA.jpg" alt="" id="EBA" width="80" />
+                <img src="img/logoEBA.jpg" alt="" id="EBA" width="84"/>
                 <span className="navbar-logo_name" href="#intro">Elo Boost Academy</span>
             </a>
             <button className="navbar-toggler" 
@@ -21,16 +21,16 @@ const Nav = () => {
             <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a className="nav-link" href="#intro">Inicio</a>
+                        <a className="nav-link" href="#lol">League Of Legends</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#section1">Servicios</a>
+                        <a className="nav-link" href="#valorant">Valorant</a>  
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#section2">Acerca de Nosotros</a>
+                        <a className="nav-link" href="#csgo">Counter Strike GO</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#section3">Contactanos</a>
+                        <a className="nav-link" href="#tft">Team Fight Tactics</a>
                     </li>
                 </ul>
             </div>

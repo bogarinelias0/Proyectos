@@ -2,7 +2,7 @@ import React from 'react';
 import './valorantgif.css'
 const Valorant = () => {
     return(
-        <div className='backgroundvalorantgif'>
+        <div className='backgroundvalorantgif' id='valorant'>
             <div className='titulovalorantingif'>
                 <h1>
                     Valorant

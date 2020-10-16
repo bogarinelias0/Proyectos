@@ -2,7 +2,7 @@ import React from 'react'
 import './tft.css'
 const Tft = () =>{
     return (
-        <div className='tftbackground'>
+        <div className='tftbackground' id='tft'>
             <div className='texto-dentro-tft'>
                 <h1>
                     Team Fight Tactics
