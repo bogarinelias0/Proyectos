@@ -1,6 +1,7 @@
 body{
     text-align: center;
     color: white;
+    max-width: 100%;
 }
 .backgroundgiflol{
     background-image: url('../../../img/gifjhin.gif');
@@ -27,4 +28,25 @@ h1{
     background-size: 600px, 400px;    
     width: 1300px;
     height: 600px;
+}
+@media(min-width:360px){
+    .backgroundgiflol{
+        background-image: url('../../../img/gifjhin.gif');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 0;
+        padding: 0;
+        min-height: 500px;
+        min-width: 400px;
+    }
+    .backgroundimagelol{
+        padding: 0;
+        text-align: center;
+        background-image: url('../../../img/league.png'), url('../../../img/nota1.png');
+        background-position: 690px 250px, 190px 170px;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 600px, 400px;    
+        width: 1300px;
+        height: 600px;
+    }
 }
