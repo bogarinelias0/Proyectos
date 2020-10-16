@@ -1,0 +1,42 @@
+.tftbackground{
+    background-image: url('../../../img/tftbackground.jpg');
+    min-height: 650px;
+    min-width: 600px;
+    background-repeat: no-repeat;
+}
+.texto-dentro-tft h1{
+    color: black;
+    font-family: fantasy;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 36%;
+}
+.infotft{
+    position: absolute;
+    font-size: 2vw;
+    margin-top: 10%;
+    margin-left: 33%;
+    color: black;
+}
+.infotft li{
+    list-style: none;
+}
+.botontft{
+    position: absolute;
+    margin-top: 31%;
+    margin-left: 42%;
+}
+.botontft a{
+    color: black;
+    font-size: 3vw;
+    background-color: seagreen;
+    border: 2px solid orangered;
+    border-radius: 12px;
+}
+.botontft a:hover{
+    color:black;
+    background-color: brown;
+    border: 3px solid white;
+}

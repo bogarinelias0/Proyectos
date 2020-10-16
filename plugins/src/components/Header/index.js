@@ -6,10 +6,9 @@ const Header = () => {
         <div className='backgroundgiflol'>
             <h1>EloBoostAcademy™</h1>
             <h2>Precios</h2>
-            <div className='backgroundimagelol'>
+            <div className='backgroundimagelol' id='lol'>
                 
             </div>
-            
         </div>
     )
 }

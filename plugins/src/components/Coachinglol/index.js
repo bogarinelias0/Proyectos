@@ -4,6 +4,11 @@ import './Coachinglol.css'
 const Coachinglol = () =>{
     return (
         <div className='backgroundcoaching'>
+            <div className='texto-coachinglol'>
+                <p>
+                Contamos con 10 años de expierencia en League of Legends, Challengers enseñandote junto a vos, ademas de tener asesoramiento en sesiones, mostrarte como ganar y que lleges a la victoria. Se victorioso!
+                </p>
+            </div>
             <div className='titlecoachlol'>
                 <h1>
                     Coaching Tecnico Profesional

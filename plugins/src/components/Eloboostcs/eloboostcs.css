@@ -1,0 +1,24 @@
+.csboost{
+    background-color: grey;
+    min-width: 300px;
+    min-height: 150px;
+}
+.titleboostcs h1{
+    margin: 0;
+    padding: 0;
+    font-size: 4vw;
+}
+.titleboostcs a{
+    font-size: 4vw;
+    font-family: fantasy;
+    border: 4px solid black;
+    border-radius: 10px;
+    color: rgb(238, 226, 57);
+    background-color: chocolate;
+}
+.titleboostcs a:hover{
+    cursor: pointer;
+    color: rgb(231, 78, 6);
+    background-color: rgba(19, 155, 80, 0.692);
+}
+

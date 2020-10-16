@@ -1,0 +1,117 @@
+#footer {
+  background: #222222;
+  font-size: 12px;
+  line-height: 50px;
+}
+
+#footer .social {
+  text-align: left;
+}
+
+#footer .social a {
+  margin-left: 10px;
+  color: #fff;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  line-height: 50px;
+  font-size: 25px;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+#footer .social a.facebook {
+  background-color: #4460ae;
+  margin-top: 10%;
+}
+
+#footer .social a.gplus {
+  background-color: #c21f25;
+}
+
+#footer .social a.instagram {
+  background-color: #cd4378;
+  margin-top: 10%;
+}
+
+#footer .social a.twitter {
+  background-color: #00aced;
+}
+
+#footer .social a.email {
+  background-color: #33e723;
+  margin-top: 10%;
+}
+
+@media (max-width: 767px) {
+  #footer .social {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+#footer div {
+  margin: 0;
+  text-align: right;
+  color: #eeeeee;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  #footer div {
+    text-align: center;
+  }
+}
+
+#footer .template-bootstrapious {
+  margin-top: 20px;
+  text-align: center;
+  color: #999999;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+}
+
+#footer .template-bootstrapious a {
+  color: #999999;
+}
+
+@media (max-width: 767px) {
+  #footer .template-bootstrapious {
+    text-align: center;
+  }
+}
+#tm{
+  font-size: 1.7vw;
+  margin-top: 4%;
+  color: lawngreen;
+}
+#derechos{
+  font-size: 1.7vw;
+  margin-top: -4%;
+  color: lawngreen;
+}
+.terminos{
+  font-size: 1.7vw;
+  color: chocolate;
+}
+.terminos:hover{
+  color: #c21f25;
+  font-family: fantasy;
+}
+.mediosdepago{
+  background-image: url('../../../img/medios\ de\ pago/todo2.png');
+  min-width: 190px;
+  min-height: 180px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left: 31% !important;
+  background-position: 4px 10px;
+  position: absolute;
+}
+#redes{
+  margin-left: 4% !important;
+}
