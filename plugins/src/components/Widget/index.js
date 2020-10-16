@@ -14,9 +14,10 @@ import Cuentascs from '../compracuentascs';
 import Coachingcs from '../coachingcsgo';
 import Tft from '../Tft';
 import Footer from '../Footer'
+import FirstHeader from '../FirstHeader';
 const Widget = () => { 
     return(
-        <div className=''>
+        <div>
             <Nav />
             <Header />
             <LoL />
