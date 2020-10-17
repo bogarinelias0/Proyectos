@@ -30,7 +30,7 @@ const Footer = () => {
                     </div>
                     <div className='mediosdepago'>
                     </div>
-                    <div className="col-sm-6">
+                    <div className="col-sm-6" id='text-footer'>
                         <p id='tm'>
                             EloBoostAcademy™
                         </p>

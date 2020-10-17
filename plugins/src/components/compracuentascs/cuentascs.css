@@ -1,11 +1,10 @@
 .cuentascs{
     background-image: url('../../../img/ventacuentascsgo.jpg');
-    min-width: 400px;
+    min-width: 300px;
     min-height: 750px;
     background-size: 100%;
     background-repeat: no-repeat;
-    max-width: 100%;
-    max-height: 100%;
+   
     text-align: center;
 }
 .comprar-cuentas-cs{
@@ -193,4 +192,212 @@
 #iconwhappcs2{
     color: white;
     width: 60px;
+}
+@media (min-width:360px)and (max-width:500px){
+  .cuentascs{
+    background-size: 100% 300px;
+    min-height: 300px;
+  }
+  .comprar-cuentas-cs h1{
+    font-size: 3vw;
+  }
+  #fbcsgo{
+    font-size: 3.5vw;
+  }
+  #iconfbcs{
+    width: 20px;
+  }
+  #igcs{
+    font-size: 3.5vw;
+    margin-left: 21%;
+  }
+  #iconigcs{
+    width: 20px;
+  }
+  #whappcs{
+    font-size: 3.5vw;
+    margin-left: 30%;
+  }
+  #iconwhappcs{
+    width: 20px;
+  }
+  #fbcsgo2{
+    font-size: 3.5vw;
+  }
+  #iconfbcs2{
+    width: 20px;
+  }
+  #igcs2{
+    font-size: 3.5vw;
+    margin-left: 21%;
+  }
+  #iconigcs2{
+    width: 20px;
+  }
+  #whappcs2{
+    font-size: 3.5vw;
+    margin-left: 30%;
+  }
+  #iconwhappcs2{
+    width: 20px;
+  }
+  .comprar-items h1{
+    font-size: 3.4vw;
+  }
+}
+@media (min-width:500px)and (max-width:850px){
+  .cuentascs{
+    background-size: 100% 450px;
+    min-height: 450px;
+  }
+  .comprar-cuentas-cs h1{
+    font-size: 3vw;
+  }
+  #fbcsgo{
+    font-size: 4.7vw;
+  }
+  #iconfbcs{
+    width: 45px;
+  }
+  #igcs{
+    font-size: 4.7vw;
+    margin-left: 21%;
+  }
+  #iconigcs{
+    width: 45px;
+  }
+  #whappcs{
+    font-size: 4.7vw;
+    margin-left: 30%;
+  }
+  #iconwhappcs{
+    width: 45px;
+  }
+  #fbcsgo2{
+    font-size: 4.7vw;
+  }
+  #iconfbcs2{
+    width: 45px;
+  }
+  #igcs2{
+    font-size: 4.7vw;
+    margin-left: 21%;
+  }
+  #iconigcs2{
+    width: 45px;
+  }
+  #whappcs2{
+    font-size: 4.7vw;
+    margin-left: 30%;
+  }
+  #iconwhappcs2{
+    width: 45px;
+  }
+  .comprar-items h1{
+    font-size: 3.4vw;
+  }
+}
+@media (min-width:850px)and (max-width:1150px){
+  .cuentascs{
+    background-size: 100% 580px;
+    min-height: 580px;
+  }
+  .comprar-cuentas-cs h1{
+    font-size: 3.8vw;
+  }
+  #fbcsgo{
+    font-size: 5.4vw;
+  }
+  #iconfbcs{
+    width: 65px;
+  }
+  #igcs{
+    font-size: 5.4vw;
+    margin-left: 21%;
+  }
+  #iconigcs{
+    width: 65px;
+  }
+  #whappcs{
+    font-size: 5.4vw;
+    margin-left: 30%;
+  }
+  #iconwhappcs{
+    width: 65px;
+  }
+  #fbcsgo2{
+    font-size: 5.4vw;
+  }
+  #iconfbcs2{
+    width: 65px;
+  }
+  #igcs2{
+    font-size: 5.4vw;
+    margin-left: 21%;
+  }
+  #iconigcs2{
+    width: 65px;
+  }
+  #whappcs2{
+    font-size: 5.4vw;
+    margin-left: 30%;
+  }
+  #iconwhappcs2{
+    width: 65px;
+  }
+  .comprar-items h1{
+    font-size: 3.8vw;
+  }
+}
+@media (min-width:1150px)and (max-width:1466px){
+  .cuentascs{
+    background-size: 100% 770px;
+    min-height: 770px;
+  }
+  .comprar-cuentas-cs h1{
+    font-size: 4vw;
+  }
+  #fbcsgo{
+    font-size: 5.7vw;
+  }
+  #iconfbcs{
+    width: 94px;
+  }
+  #igcs{
+    font-size: 5.7vw;
+    margin-left: 21%;
+  }
+  #iconigcs{
+    width: 94px;
+  }
+  #whappcs{
+    font-size: 5.7vw;
+    margin-left: 30%;
+  }
+  #iconwhappcs{
+    width: 94px;
+  }
+  #fbcsgo2{
+    font-size: 5.7vw;
+  }
+  #iconfbcs2{
+    width: 94px;
+  }
+  #igcs2{
+    font-size: 5.7vw;
+    margin-left: 21%;
+  }
+  #iconigcs2{
+    width: 94px;
+  }
+  #whappcs2{
+    font-size: 5.7vw;
+    margin-left: 30%;
+  }
+  #iconwhappcs2{
+    width: 94px;
+  }
+  .comprar-items h1{
+    font-size: 3.4vw;
+  }
 }

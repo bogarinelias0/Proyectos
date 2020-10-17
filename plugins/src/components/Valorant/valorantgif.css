@@ -30,3 +30,29 @@
     width: 100%;
     background-color: rgb(12, 116, 47);
 }
+@media (min-width:360px) and (max-width:480px){
+    .backgroundvalorantgif{
+        background-size: 100% 280px;
+        background-position: 0 15px;
+        min-height: 200px;
+    }
+}
+@media (min-width:480px) and (max-width:700px){
+    .backgroundvalorantgif{
+        background-size: 100% 400px;
+        min-height: 300px;
+
+    }
+}
+@media (min-width:700px) and (max-width:1000px){
+    .backgroundvalorantgif{
+        background-size: 100% 560px ;
+        min-height: 280px;
+    }
+}
+@media (min-width:1000px)and (max-width:1366px){
+    .backgroundvalorantgif{
+        background-size: 100% 750px;
+        min-height: 250px;
+    }
+}

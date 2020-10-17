@@ -1,11 +1,11 @@
 .ventacuentasval-contain{
     background-image: url('../../../img/valorant/pruebafondo.gif');
     background-color: black;
-    background-size:45%;
+    background-size:45% 600px;
     background-repeat: no-repeat;
     background-position: 600px -30px;
-    min-width: 700px;
-    min-height: 700px;
+    min-width: 300px;
+    min-height: 600px;
 }
 .texto-ventacuentasval{
     width: 250px;
@@ -35,4 +35,62 @@
     color: rgb(255, 0, 34);
     cursor: pointer;
     background: rgb(46,214,122);
+}
+
+@media (min-width:360px) and (max-width:480px){
+    .ventacuentasval-contain{
+        background-size: 50% 300px;
+        background-position: 180px 50px;
+        min-height: 300px;
+        max-width: 100%;
+    }
+    .texto-cuentasval{
+        font-size: 0.7vw;
+        width: 200px;
+    }
+    .texto-ventacuentasval h1{
+        font-size: 7vw;
+    }
+}
+@media (min-width:480px) and (max-width:700px){
+    .ventacuentasval-contain{
+        background-size: 55% 380px;
+        min-height: 380px;
+        background-position: 180px 30px;
+    }
+    .texto-cuentasval{
+        font-size: 1vw;
+        width: 150px;
+        margin-left: 12%;
+    }
+}
+@media (min-width:700px) and (max-width:1100px){
+    .ventacuentasval-contain{
+        background-size: 58% 390px;
+        min-height: 380px;
+        background-position: 320px 40px;
+    }
+    .texto-cuentasval{
+        font-size: 1.1vw;
+        width: 200px;
+        margin-left: 8%;
+    }
+    .botoncomprar-cuenta{
+        margin-left: 10%;
+    }
+}
+@media (min-width:1100px) and (max-width:1450px){
+    .ventacuentasval-contain{
+        background-size: 50% 500px;
+        min-height: 500px;
+        background-position: 450px 0 ;
+    }
+    .texto-cuentasval{
+        font-size: 1.5vw;
+        width: 280px;
+        margin-left: 10%;
+    }
+    .botoncomprar-cuenta{
+        margin-left: 12%;
+    }
 }
