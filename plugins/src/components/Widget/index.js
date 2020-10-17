@@ -15,6 +15,7 @@ import Coachingcs from '../coachingcsgo';
 import Tft from '../Tft';
 import Footer from '../Footer'
 import FirstHeader from '../FirstHeader';
+import Boostval from '../Valorantboost';
 const Widget = () => { 
     return(
         <div>
@@ -24,6 +25,7 @@ const Widget = () => {
             <Coachinglol />
             <Ventacuentaslol />
             <Valorant />
+            <Boostval />
             <Ventacuentasval />
             <Coachvalorant />
             <Fondocss/>

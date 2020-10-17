@@ -1,8 +1,8 @@
 import React from 'react';
 import Valorantdivision from '../Valorantdivision';
 
-const Valorantdivisions = ({ divisions, enabled, className }) => {
-    const getValorantdivisions = () => divisions.map((division, i) => <Division key={i} { ...division } className={`${enabled == i ? 'active' : '' }`} />);
+const Valorantdivisions = ({ divisionsval, enabled, className }) => {
+    const getValorantdivisions = () => divisionsval.map((valdivision, i) => <Valorantdivision key={i} { ...valdivision } className={`${enabled == i ? 'active' : '' }`} />);
 
     return(
         <div className={`${className}`}>

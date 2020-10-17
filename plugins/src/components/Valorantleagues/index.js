@@ -1,8 +1,8 @@
 import React from 'react';
 import Valorantleague from '../Valorantleague';
 
-const Valorantleagues = ({ className, leagues, enabled }) => {
-    const getValorantleagues = () => leagues.map((league, i) => <League key={i} { ...league } className={`${enabled == i ? 'active' : '' }`}/> );
+const Valorantleagues = ({ className, leaguesvalorant, enabled }) => {
+    const getValorantleagues = () => leaguesvalorant.map((leagueval, i) => <Valorantleague key={i} { ...leagueval } className={`${enabled == i ? 'active' : '' }`}/> );
 
     return(
         <div className={`${className}`}>

@@ -21,7 +21,7 @@ const ValSelector = ({
                 <Valorantleagues className='carousel-inner container_ss' enabled={currentLeagueval} leaguesval={leaguesval}/>
             </Valslider>
             <Valslider updateCurrent={onDivisionChange} current={currentDivisionval} size={valdivisions.length} id={divisionSelectorval}>
-                <Valorantdivisions className='carousel-inner container_ss' enabled={currenDivision} valdivisions={Valorantdivisions}/>
+                <Valorantdivisions className='carousel-inner container_ss' enabled={currentDivisionval} valdivisions={Valorantdivisions}/>
             </Valslider>
         </div>
     )
