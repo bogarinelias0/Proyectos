@@ -52,3 +52,9 @@
     border:3px solid white;
     background-color: rgb(226, 13, 191);
 }
+@media (min-width:360px) and (max-width:480px){
+    .backgroundcoaching{
+        max-width: 100%;
+        min-height: 200px;
+    }
+}
