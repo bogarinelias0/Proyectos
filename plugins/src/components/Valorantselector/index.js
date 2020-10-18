@@ -18,10 +18,18 @@ const ValSelector = ({
         <div className='container_widget'>
             <h2> {label} </h2>
             <Valslider updateCurrent={onLeagueChangeval} current={currentLeagueval} size={leaguesval.length} id={leagueSelector}>
-                <Valorantleagues className='carousel-inner container_ss' enabled={currentLeagueval} leaguesval={leaguesval}/>
+                <Valorantleagues
+                    className='carousel-inner container_ss'
+                    enabled={currentLeagueval}
+                    leaguesvalorant={leaguesval}
+                />
             </Valslider>
             <Valslider updateCurrent={onDivisionChange} current={currentDivisionval} size={valdivisions.length} id={divisionSelectorval}>
-                <Valorantdivisions className='carousel-inner container_ss' enabled={currentDivisionval} valdivisions={Valorantdivisions}/>
+                <Valorantdivisions 
+                    className='carousel-inner container_ss'
+                    enabled={currentDivisionval}
+                    divisionsval={valdivisions}
+                />
             </Valslider>
         </div>
     )
