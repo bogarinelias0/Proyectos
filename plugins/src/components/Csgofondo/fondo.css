@@ -1,7 +1,7 @@
 .fondocs{
     background-image: url('../../../img/logocsgo.gif');
-    min-width: 600px;
-    min-height: 650px;
+    min-width: 300px;
+    min-height: 550px;
     background-repeat: no-repeat;
     background-size: 100%;
     max-height: 100%;
@@ -13,6 +13,37 @@
 }
 .titlecs{
     position: absolute;
-    margin-top: 40%;
     margin-left: 40%;
+}
+@media (min-width:360px) and (max-width:500px){
+    .fondocs{
+        background-size: 100% 350px;
+        min-height: 350px;
+    }
+    .titlecs h1{
+        padding: 0;
+        font-size: 6vw;
+        position: relative;
+        margin-top: 300%;
+    }
+}
+@media (min-width:500px) and (max-width:850px){
+    .fondocs{
+        background-size: 100% 400px;
+        min-height: 400px;
+    }
+    .titlecs{
+        margin-top: 40%;
+        max-height: 100%;
+    }
+}
+@media (min-width:850px)and (max-width:1200px){
+    .fondocs{
+        background-size: 100% 450px;
+        min-height: 450px;
+    }
+    .titlecs{
+        margin-top: 29%;
+    }
+    
 }

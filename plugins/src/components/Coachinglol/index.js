@@ -5,7 +5,7 @@ const Coachinglol = () =>{
     return (
         <div className='backgroundcoaching'>
             <div className='texto-coachinglol'>
-                <p>
+                <p id='text-left'>
                 Contamos con 10 años de expierencia en League of Legends, Challengers enseñandote junto a vos, ademas de tener asesoramiento en sesiones, mostrarte como ganar y que lleges a la victoria. Se victorioso!
                 </p>
             </div>

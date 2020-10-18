@@ -5,7 +5,7 @@ const Cuentascs = () =>{
         <div className='cuentascs'>
             <div className='comprar-cuentas-cs'>
                 <h1>
-                    Para comprara cuentas
+                    Para comprar cuentas
                 </h1>
             </div>
             <div className="col-sm-4 social" id='redescs'>

@@ -42,3 +42,31 @@
     margin-left: 7%;
     color: white !important;
 }
+@media (min-width:360px) and (max-width:480px){
+    .contain-ventas{
+        position: relative;
+        background-size: 100% 340px;
+        min-height: 150px;
+    }
+    .contain-text-ventas-lol{
+        width: 30px;
+        position: absolute;
+        margin-left: 78%;
+    }
+}
+@media (min-width:480px) and (max-width:700px){
+    .contain-ventas{
+        position: relative;
+        background-size: 100% 400px;
+        min-height: 210px;
+    }
+    .contain-text-ventas-lol{
+        width: 40px;
+        position: absolute;
+        margin-left: 81%;
+        font-size: 1vw;
+    }
+    .contain-text-ventas-lol h2{
+        font-size: 2vw;
+    }
+}

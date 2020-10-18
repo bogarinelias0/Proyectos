@@ -3,8 +3,7 @@
     background-repeat: no-repeat;
     background-size: 120%;
     min-height: 670px;
-    min-width: 500px;
-    background-position: -100px 0 ;
+    min-width: 300px;
 }
 .texto-coaching-cs{
 
@@ -46,4 +45,92 @@
     color: white;
     background-color: rgb(27, 7, 49);
     cursor: pointer;
+}
+@media (min-width:360px) and (max-width:500px){
+    .coaching-fondo-cs{
+        background-size: 100% 300px;
+        min-height: 300px;
+    }
+    .texto-coaching-cs h1{
+        font-size: 5vw;
+        margin-left: 20%;
+    }
+    .sesiones-coach-cs h2{
+        font-size: 7vw;
+        margin-left: 58%;
+    }
+    .sesiones-coach-cs p{
+        font-size: 6vw;
+        margin-top: 23%;
+    }
+    .sesiones-coach-cs a{
+        margin-top: 38%;
+        margin-left: 15%;
+        }
+}
+@media (min-width:500px) and (max-width:850px){
+    .coaching-fondo-cs{
+        background-size: 100% 380px;
+        min-height: 380px;
+    }
+    .texto-coaching-cs h1{
+        font-size: 5vw;
+        margin-left: 20%;
+    }
+    .sesiones-coach-cs h2{
+        font-size: 7vw;
+        margin-left: 58%;
+    }
+    .sesiones-coach-cs p{
+        font-size: 6vw;
+        margin-top: 23%;
+    }
+    .sesiones-coach-cs a{
+        margin-top: 38%;
+        margin-left: 15%;
+        }
+}
+@media (min-width:850px) and (max-width:1150px){
+    .coaching-fondo-cs{
+        background-size: 100% 560px;
+        min-height: 560px;
+    }
+    .texto-coaching-cs h1{
+        font-size: 5vw;
+        margin-left: 20%;
+    }
+    .sesiones-coach-cs h2{
+        font-size: 7vw;
+        margin-left: 58%;
+    }
+    .sesiones-coach-cs p{
+        font-size: 6vw;
+        margin-top: 23%;
+    }
+    .sesiones-coach-cs a{
+        margin-top: 38%;
+        margin-left: 15%;
+        }
+}
+@media (min-width:1150px) and (max-width:1450px){
+    .coaching-fondo-cs{
+        background-size: 100% 700px;
+        min-height: 700px;
+    }
+    .texto-coaching-cs h1{
+        font-size: 5vw;
+        margin-left: 20%;
+    }
+    .sesiones-coach-cs h2{
+        font-size: 7vw;
+        margin-left: 58%;
+    }
+    .sesiones-coach-cs p{
+        font-size: 6vw;
+        margin-top: 23%;
+    }
+    .sesiones-coach-cs a{
+        margin-top: 38%;
+        margin-left: 15%;
+        }
 }

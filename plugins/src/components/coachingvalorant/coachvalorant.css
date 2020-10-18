@@ -2,8 +2,8 @@
     background-image: url('../../../img/valorant/sagev.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    min-width: 700px;
-    height: 600px;
+    min-width: 300px;
+    min-height: 600px;
 }
 .title-coachlol h1{
     font-size: 4.5vw;
@@ -65,4 +65,22 @@
     cursor: pointer;
     color: white;
     background-color: tomato;
+}
+@media (min-width:360px) and (max-width:480px){
+    .background-titles-coachval{
+        background-size: 100% 300px;
+        min-height: 300px;
+    }
+}
+@media (min-width:480px) and (max-width:700px){
+    .background-titles-coachval{
+        background-size: 100% 350px;
+        min-height: 350px;
+    }
+}
+@media (min-width:700px) and (max-width:1100px){
+    .background-titles-coachval{
+        background-size: 100% 480px;
+        min-height: 480px;
+    }
 }
