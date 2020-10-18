@@ -1,52 +1,52 @@
-const { divisions } = require("../constants/divisions");
-const { leagues } = require("../constants/leagues");
+const { duodivisions } = require("../constants/duodivisions");
+const { duoleagues } = require("../constants/duoleagues");
 
 const GOLD_DIVISION = {
     price: 18
 };
 
 const GOLD_LEAGUE_TO_PLATINO = {
-    price: 30
+    price: 45
 };
 
 const PLATINO_DIVISION = {
-    price: 17,
+    price: 26,
 };
 
 const PLATINO_LEAGUE_TO_DIAMANT = {
-    price: 35,
+    price: 53,
 };
 
 const DIAMANTE_4_DIVISION = {
-    price: 30,
-};
-
-const DIAMANTE_4_TO_DIAMANT_2 = {
     price: 45,
 };
 
+const DIAMANTE_4_TO_DIAMANT_2 = {
+    price: 68,
+};
+
 const DIAMANTE_2_DIVISION = {
-    price:35,
+    price: 83,
 };
 
 const DIAMANTE_2_TO_MASTER = {
-    price: 55,
+    price: 83,
 };
 
 const MASTER = {
-    price: 15,
+    price: 23,
     promo: [{
         name: '+200 lp',
-        price: 20
+        price: 30
     }]
 };
 
 const S1 = {
-    price: 10,
+    price: 15,
 };
 
-const LEAGUES = ['iron', 'bronce', 'silver', 'gold', 'platino', 'diamante', 'master'];
-const DIVISIONS = [4, 3, 2, 1];
+const LEAGUESDUO = ['iron', 'bronce', 'silver', 'gold', 'platino', 'diamante', 'master'];
+const DIVISIONSDUO = [4, 3, 2, 1];
 
 const RULES_FOR_LEAGUE = {
     def: S1,
@@ -74,44 +74,44 @@ const DIVISION_JUMPS = {
     1: 3
 };
 
-const validCombination = ({ currentLeague, currentDivision, nextLeague, nextDivision }) => {
-    const currentLeaguePosition = LEAGUES.indexOf(currentLeague.name);
-    const nextLeaguePosition = LEAGUES.indexOf(nextLeague.name);
+const validCombination = ({ currentLeagueduo, currentDivisionduo, nextLeagueduo, nextDivisionduo }) => {
+    const currentLeaguePositionduo = LEAGUESDUO.indexOf(currentLeagueduo.name);
+    const nextLeaguePositionduo = LEAGUESDUO.indexOf(nextLeagueduo.name);
     
-    const currentDivisionPosition = DIVISIONS.indexOf(currentDivision.name);
-    const nextDivisionPosition = DIVISIONS.indexOf(nextDivision.name);
+    const currentDivisionPositionduo = DIVISIONSDUO.indexOf(currentDivisionduo.name);
+    const nextDivisionPositionduo = DIVISIONSDUO.indexOf(nextDivisionduo.name);
 
-    if(currentLeaguePosition < nextLeaguePosition ) {
-        const leaguesToIterate = LEAGUES.slice(0, nextLeaguePosition+1);
-        let pricePerDivision = 0;
-        let pricePerLeague = 0;
-        let prevLeague = currentLeague.name;
+    if(currentLeaguePositionduo < nextLeaguePositionduo ) {
+        const leaguesToIterate = LEAGUESDUO.slice(0, nextLeaguePositionduo+1);
+        let pricePerDivisionduo = 0;
+        let pricePerLeagueduo = 0;
+        let prevLeagueduo = currentLeagueduo.name;
         for(let j = 0; j < leaguesToIterate.length; j++) {
-            let limit = currentDivision.name;
-            if(leaguesToIterate[j] !== prevLeague ) {
-                const unitPriceLeague = RULES_FOR_LEAGUE[`${prevLeague}_to_${leaguesToIterate[j]}`] || RULES_FOR_LEAGUE['def'];
-                pricePerLeague += unitPriceLeague.price;
-                if(prevLeague === nextLeague.name){
-                    limit = nextDivision.name
+            let limit = currentDivisionduo.name;
+            if(leaguesToIterate[j] !== prevLeagueduo ) {
+                const unitPriceLeagueduo = RULES_FOR_LEAGUE[`${prevLeagueduo}_to_${leaguesToIterate[j]}`] || RULES_FOR_LEAGUE['def'];
+                pricePerLeagueduo += unitPriceLeagueduo.price;
+                if(prevLeagueduo === nextLeagueduo.name){
+                    limit = nextDivisionduo.name
                 } else {
                     limit = 1;
                 }
-                prevLeague = leaguesToIterate[j];
+                prevLeagueduo = leaguesToIterate[j];
             }
             let vl = leaguesToIterate[j]
             for(let i = 0; i < DIVISION_JUMPS[limit]; i++) {
                 if(leaguesToIterate[j] === 'diamante') {
                     vl = limit === 2 || limit === 1 ? 'diamante_2' : 'diamante_4';
                 }
-                pricePerDivision += RULES_FOR_DIVISION[vl].price
+                pricePerDivisionduo += RULES_FOR_DIVISION[vl].price
             }
         }
-        return `El precio es: USD ${pricePerDivision + pricePerLeague }`;
-    } else if (currentLeaguePosition === nextLeaguePosition && nextDivisionPosition > currentDivisionPosition ){
-        const unitPrice = nextLeague.name === 'diamante' ? `${nextLeague.name}_${nextDivision.name}` : nextLeague.name;
+        return `El precio es: USD ${pricePerDivisionduo + pricePerLeagueduo }`;
+    } else if (currentLeaguePositionduo === nextLeaguePositionduo && nextDivisionPositionduo > currentDivisionPositionduo ){
+        const unitPriceduo = nextLeagueduo.name === 'diamante' ? `${nextLeagueduo.name}_${nextDivisionduo.name}` : nextLeagueduo.name;
         let price = 0;
-        for(let i = currentDivisionPosition; i < nextDivisionPosition; i++){
-            price += RULES_FOR_DIVISION[unitPrice].price;
+        for(let i = currentDivisionPositionduo; i < nextDivisionPositionduo; i++){
+            price += RULES_FOR_DIVISION[unitPriceduo].price;
         }
         return `El precio es: USD ${price}`
     } else {
@@ -119,4 +119,4 @@ const validCombination = ({ currentLeague, currentDivision, nextLeague, nextDivi
     }
 };
 
-export const getLoLPricing = (currentLeague, currentDivision, nextLeague, nextDivision) => validCombination({ currentLeague, currentDivision, nextLeague, nextDivision });
+export const getDuoPricing = (currentLeagueduo, currentDivisionduo, nextLeagueduo, nextDivisionduo) => validCombination({ currentLeagueduo, currentDivisionduo, nextLeagueduo, nextDivisionduo });

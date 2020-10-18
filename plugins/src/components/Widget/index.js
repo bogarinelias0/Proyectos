@@ -16,6 +16,8 @@ import Tft from '../Tft';
 import Footer from '../Footer'
 import FirstHeader from '../FirstHeader';
 import Boostval from '../Valorantboost';
+import Duoval from '../Valorantduoboost';
+import DuoBoost from '../Duoboost'
 const Widget = () => { 
     return(
         <div>
@@ -24,8 +26,10 @@ const Widget = () => {
             <LoL />
             <Coachinglol />
             <Ventacuentaslol />
+            <DuoBoost />
             <Valorant />
             <Boostval />
+            <Duoval />
             <Ventacuentasval />
             <Coachvalorant />
             <Fondocss/>
