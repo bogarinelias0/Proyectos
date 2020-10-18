@@ -19,7 +19,7 @@ export const leaguesval = [{
     name:'silver',
     img: {
         alt:'silver',
-        src: 'img/valorant/ligas/silver1.png',
+        src: 'img/valorant/ligas/silver.png',
         width:'100'
     }
 }, {
@@ -27,7 +27,7 @@ export const leaguesval = [{
     name:'gold',
     img: {
         alt:'gold',
-        src: 'img/valorant/ligas/oro.png',
+        src: 'img/valorant/ligas/gold.png',
         width:'100'
     }
 }, {
@@ -43,7 +43,7 @@ export const leaguesval = [{
     name:'diamante',
     img: {
         alt:'diamante',
-        src: 'img/valorant/ligas/diamante.png',
+        src: 'img/valorant/ligas/diamond.png',
         width:'100'
     }
 }, {
