@@ -1,5 +1,5 @@
 import React from 'react';
-import './leagueval.css';
+import './duoleague.css';
 
 const Duoleague = ({ img, className }) => {
     return(

@@ -18,18 +18,17 @@ const DuoSelector = ({
         <div className='container_widget'>
             <h2> {label} </h2>
             <Duoslider updateCurrent={onLeagueChangeduo} current={currentLeagueduo} size={duoleagues.length} id={leagueSelector}>
-                <Duoleagues 
-                    className='carousel-inner container_ss' 
-                    enabled={currentLeagueduo}
-                    leagues={duoleagues}
+                <Duoleagues
+                className='carousel-inner container_ss' 
+                enabled={currentLeagueduo} 
+                duoleagues={duoleagues}
                 />
             </Duoslider>
             <Duoslider updateCurrent={onDivisionChangeduo} current={currentDivisionduo} size={duodivisions.length} id={divisionSelectorduo}>
                 <Duodivisions 
                 className='carousel-inner container_ss' 
                 enabled={currentDivisionduo} 
-                divisions={duodivisions}
-                />
+                duodivisions={duodivisions}/>
             </Duoslider>
         </div>
     )

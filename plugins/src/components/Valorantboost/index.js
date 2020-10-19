@@ -30,7 +30,7 @@ const Boostval = () => {
     };
 
     return(
-        <div className='backgroundlol'>
+        <div className='backgroundval'>
             <div className='container'>
                 <ValSelector 
                     label={LABEL_LIGA_ACTUAL_PREGUNTA}

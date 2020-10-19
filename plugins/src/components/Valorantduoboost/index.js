@@ -3,6 +3,7 @@ import { valdivisions } from '../../constants/valdivisions';
 import { leaguesval } from '../../constants/leaguesval';
 import ValPricing from '../Valorantprices';
 import ValSelector from '../Valorantselector';
+import './duoval.css'
 const LABEL_LIGA_ACTUAL_PREGUNTA = '¿En qué rango te encontrás?';
 const LABEL_LIGA_SIGUIENTE_PREGUNTA = '¿A cual rango queres llegar?';
 
@@ -29,7 +30,7 @@ const Duoval = () => {
     };
 
     return(
-        <div className='backgroundlol'>
+        <div className='backgroundval'>
             <div className='container'>
                 <ValSelector 
                     label={LABEL_LIGA_ACTUAL_PREGUNTA}

@@ -17,16 +17,24 @@ import Footer from '../Footer'
 import FirstHeader from '../FirstHeader';
 import Boostval from '../Valorantboost';
 import Duoval from '../Valorantduoboost';
+import Duolol from '../Duoboostlol';
+import Duoq from '../valoranttitleduoq';
+import Textolol from '../textoboostlol';
+import Textoduoq from '../textoduoq';
 const Widget = () => { 
     return(
         <div>
             <Nav />
             <Header />
+            <Textolol />
             <LoL />
+            <Textoduoq />
+            <Duolol />
             <Coachinglol />
             <Ventacuentaslol />
             <Valorant />
             <Boostval />
+            <Duoq />
             <Duoval />
             <Ventacuentasval />
             <Coachvalorant />

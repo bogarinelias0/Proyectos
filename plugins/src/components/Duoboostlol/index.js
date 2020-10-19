@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { duodivisions } from '../../constants/duodivisions';
 import { duoleagues } from '../../constants/duoleagues';
-import DuoPricing from '../Duoprices';
+import DuoPricing from '../Duopricing';
 import DuoSelector from '../Duoselector';
-import './boostval.css'
-const LABEL_LIGA_ACTUAL_PREGUNTA = '¿En qué rango te encontrás?';
-const LABEL_LIGA_SIGUIENTE_PREGUNTA = '¿A cual rango queres llegar?';
+import './duoboostlol.css'
+const LABEL_LIGA_ACTUAL_PREGUNTA = '¿En qué liga te encontrás?';
+const LABEL_LIGA_SIGUIENTE_PREGUNTA = '¿A cual liga queres llegar?';
 
-const DuoBoost = () => { 
+const Duolol = () => { 
     const [currentLeagueduo, setCurrentLeagueduo] = useState(0);
     const [currentDivisionduo, setCurrentDivisionduo] = useState(0);
     const [nextLeagueduo, setNextLeagueduo] = useState(0);
@@ -34,7 +34,7 @@ const DuoBoost = () => {
             <div className='container'>
                 <DuoSelector 
                     label={LABEL_LIGA_ACTUAL_PREGUNTA}
-                    DuoSelector='leagueFrom'
+                    leagueSelectorduo='leagueFrom'
                     onLeagueChangeduo={updateCurrentLeagueduo}
                     currentLeagueduo={currentLeagueduo}
                     divisionSelectorduo='divisionFrom'
@@ -44,9 +44,9 @@ const DuoBoost = () => {
                 <DuoSelector 
                     label={LABEL_LIGA_SIGUIENTE_PREGUNTA}
                     currentLeagueduo={nextLeagueduo}
-                    valSelector='leagueTo'
+                    leagueSelectorduo='leagueTo'
                     onLeagueChangeduo={updateNextLeagueduo}
-                    divisionSelectorval='divisionTo'
+                    divisionSelectorduo='divisionTo'
                     currentDivisionduo={nextDivisionduo}
                     onDivisionChangeduo={updateNextDivisionduo}
                 />
@@ -62,4 +62,4 @@ const DuoBoost = () => {
     );
 };
 
-export default DuoBoost;
+export default Duolol;

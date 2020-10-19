@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getDuoPricing } from '../../libs/rulesval';
+import { getDuoPricing } from '../../libs/duorules';
 
 const DuoPricing = ({ currentLeagueduo, currentDivisionduo, nextLeagueduo, nextDivisionduo }) => {
     const [pricing, setPricing] = useState('');

@@ -1,5 +1,5 @@
 import React from 'react';
-import './divisionvalorant.css';
+import './Duodivision.css';
 
 const Duodivision = ({ className, name }) => {
     return(

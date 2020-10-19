@@ -15,6 +15,9 @@ const Valorant = () => {
                 <h2>
                 Elo Boost
                 </h2>
+                <h2>
+                    Solo Q
+                </h2>
             </div>
         </div>
     )

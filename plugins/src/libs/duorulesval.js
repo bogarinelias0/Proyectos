@@ -1,48 +1,48 @@
-const { valdivisions } = require("../constants/valdivisions");
-const { leaguesval } = require("../constants/leaguesval");
+const { duovaldivisions } = require("../constants/duovaldivisions");
+const { duovalleagues } = require("../constants/duovalleagues");
 
 const GOLD_DIVISION = {
-    price: 10
+    price: 15
 };
 
 const GOLD_LEAGUE_TO_PLATINO = {
-    price: 18
+    price: 27
 };
 
 const PLATINO_DIVISION = {
-    price: 12,
+    price: 18,
 };
 
 const PLATINO_LEAGUE_TO_DIAMANT = {
-    price: 20,
-};
-
-const DIAMANTE_4_DIVISION = {
-    price: 15,
-};
-
-const DIAMANTE_4_TO_DIAMANT_2 = {
-    price: 15,
-};
-
-const DIAMANTE_2_DIVISION = {
-    price:15,
-};
-
-const DIAMANTE_2_TO_MASTER = {
     price: 30,
 };
 
+const DIAMANTE_4_DIVISION = {
+    price: 23,
+};
+
+const DIAMANTE_4_TO_DIAMANT_2 = {
+    price: 23,
+};
+
+const DIAMANTE_2_DIVISION = {
+    price:23,
+};
+
+const DIAMANTE_2_TO_MASTER = {
+    price: 45,
+};
+
 const MASTER = {
-    price: 15,
+    price: 23,
     promo: [{
         name: '+200 lp',
-        price: 20
+        price: 30
     }]
 };
 
 const S1 = {
-    price: 10,
+    price: 15,
 };
 
 const LEAGUESVAL = ['iron', 'bronce', 'silver', 'gold', 'platino', 'diamante', 'master'];
@@ -117,4 +117,4 @@ const validCombination = ({ currentLeagueval, currentDivisionval, nextLeagueval,
     }
 };
 
-export const getValPricing = (currentLeagueval, currentDivisionval, nextLeagueval, nextDivisionval) => validCombination({ currentLeagueval, currentDivisionval, nextLeagueval, nextDivisionval });
+export const getDuoValPricing = (currentLeagueval, currentDivisionval, nextLeagueval, nextDivisionval) => validCombination({ currentLeagueval, currentDivisionval, nextLeagueval, nextDivisionval });
