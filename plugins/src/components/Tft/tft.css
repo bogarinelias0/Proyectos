@@ -1,8 +1,9 @@
 .tftbackground{
     background-image: url('../../../img/tftbackground.jpg');
     min-height: 650px;
-    min-width: 300px;
+    min-width: 350px;
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 .texto-dentro-tft h1{
     color: black;

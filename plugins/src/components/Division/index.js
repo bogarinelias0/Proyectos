@@ -1,7 +1,5 @@
 import React from 'react';
-import './Division.css';
-
-const Division = ({ className, name }) => {
+const Duodivision = ({ className, name }) => {
     return(
         <div className={`carousel-item ${className}`}>
             <h1 className='division'> {name} </h1>
@@ -9,4 +7,4 @@ const Division = ({ className, name }) => {
     )
 };
 
-export default Division;
+export default Duodivision;

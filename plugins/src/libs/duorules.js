@@ -1,3 +1,5 @@
+import { leagues } from "../constants/leagues";
+
 const { duodivisions } = require("../constants/duodivisions");
 const { duoleagues } = require("../constants/duoleagues");
 
@@ -68,10 +70,10 @@ const RULES_FOR_DIVISION = {
 }
 
 const DIVISION_JUMPS = {
-    4: 0,
-    3: 1,
-    2: 2,
-    1: 3
+    4: 3,
+    3: 2,
+    2: 1,
+    1: 0
 };
 
 const validCombination = ({ currentLeagueduo, currentDivisionduo, nextLeagueduo, nextDivisionduo }) => {
@@ -89,14 +91,24 @@ const validCombination = ({ currentLeagueduo, currentDivisionduo, nextLeagueduo,
         for(let j = 0; j < leaguesToIterate.length; j++) {
             let limit = currentDivisionduo.name;
             if(leaguesToIterate[j] !== prevLeagueduo ) {
+                prevLeagueduo = leaguesToIterate [j];
                 const unitPriceLeagueduo = RULES_FOR_LEAGUE[`${prevLeagueduo}_to_${leaguesToIterate[j]}`] || RULES_FOR_LEAGUE['def'];
                 pricePerLeagueduo += unitPriceLeagueduo.price;
                 if(prevLeagueduo === nextLeagueduo.name){
-                    limit = nextDivisionduo.name
-                } else {
-                    limit = 1;
+                    console.log(nextDivisionduo.name)
+                    if (nextDivisionduo.name===4){
+                        limit= 0;
+                    }
+                    else if (nextDivisionduo.name ===3){
+                        limit= 1;
+                    }
+                    else if (nextDivisionduo.name ===2){
+                        limit = 2;
+                    }
+                    else {
+                        limit = 3;
+                    }
                 }
-                prevLeagueduo = leaguesToIterate[j];
             }
             let vl = leaguesToIterate[j]
             for(let i = 0; i < DIVISION_JUMPS[limit]; i++) {

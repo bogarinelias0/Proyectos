@@ -6,19 +6,19 @@ const GOLD_DIVISION = {
 };
 
 const GOLD_LEAGUE_TO_PLATINO = {
-    price: 30
+    price: 20
 };
 
 const PLATINO_DIVISION = {
-    price: 17,
+    price: 15,
 };
 
 const PLATINO_LEAGUE_TO_DIAMANT = {
-    price: 35,
+    price: 20,
 };
 
 const DIAMANTE_4_DIVISION = {
-    price: 30,
+    price: 25,
 };
 
 const DIAMANTE_4_TO_DIAMANT_2 = {
@@ -42,7 +42,7 @@ const MASTER = {
 };
 
 const S1 = {
-    price: 10,
+    price: 5,
 };
 
 const LEAGUES = ['iron', 'bronce', 'silver', 'gold', 'platino', 'diamante', 'master'];
@@ -68,10 +68,10 @@ const RULES_FOR_DIVISION = {
 }
 
 const DIVISION_JUMPS = {
-    4: 0,
-    3: 1,
-    2: 2,
-    1: 3
+    4: 3,
+    3: 2,
+    2: 1,
+    1: 0
 };
 
 const validCombination = ({ currentLeague, currentDivision, nextLeague, nextDivision }) => {
@@ -83,20 +83,31 @@ const validCombination = ({ currentLeague, currentDivision, nextLeague, nextDivi
 
     if(currentLeaguePosition < nextLeaguePosition ) {
         const leaguesToIterate = LEAGUES.slice(0, nextLeaguePosition+1);
+        console.log(leaguesToIterate)
         let pricePerDivision = 0;
         let pricePerLeague = 0;
         let prevLeague = currentLeague.name;
         for(let j = 0; j < leaguesToIterate.length; j++) {
             let limit = currentDivision.name;
             if(leaguesToIterate[j] !== prevLeague ) {
+                prevLeague = leaguesToIterate[j];
                 const unitPriceLeague = RULES_FOR_LEAGUE[`${prevLeague}_to_${leaguesToIterate[j]}`] || RULES_FOR_LEAGUE['def'];
                 pricePerLeague += unitPriceLeague.price;
                 if(prevLeague === nextLeague.name){
-                    limit = nextDivision.name
-                } else {
-                    limit = 1;
-                }
-                prevLeague = leaguesToIterate[j];
+                    console.log(nextDivision.name)
+                    if (nextDivision.name===4){
+                        limit= 0;
+                    }
+                    else if (nextDivision.name ===3){
+                        limit= 1;
+                    }
+                    else if (nextDivision.name ===2){
+                        limit = 2;
+                    }
+                    else {
+                        limit = 3;
+                    }
+                } 
             }
             let vl = leaguesToIterate[j]
             for(let i = 0; i < DIVISION_JUMPS[limit]; i++) {
@@ -106,7 +117,8 @@ const validCombination = ({ currentLeague, currentDivision, nextLeague, nextDivi
                 pricePerDivision += RULES_FOR_DIVISION[vl].price
             }
         }
-        return `El precio es: USD ${pricePerDivision + pricePerLeague }`;
+        console.log(pricePerDivision)
+        return `El precio es: USD ${pricePerLeague + pricePerDivision}`;
     } else if (currentLeaguePosition === nextLeaguePosition && nextDivisionPosition > currentDivisionPosition ){
         const unitPrice = nextLeague.name === 'diamante' ? `${nextLeague.name}_${nextDivision.name}` : nextLeague.name;
         let price = 0;
@@ -116,7 +128,7 @@ const validCombination = ({ currentLeague, currentDivision, nextLeague, nextDivi
         return `El precio es: USD ${price}`
     } else {
         return 'No se puede hacer un downgrade hacia abajo';
-    }
+    } 
 };
 
 export const getLoLPricing = (currentLeague, currentDivision, nextLeague, nextDivision) => validCombination({ currentLeague, currentDivision, nextLeague, nextDivision });

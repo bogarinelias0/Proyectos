@@ -12,8 +12,8 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
-    min-height: 800px;
-    min-width: 400px;
+    min-height: 300px;
+    min-width: 300px;
 }
 h1{
     font-family: fantasy;
@@ -27,27 +27,80 @@ h1{
     background-position: 415px 130px, 70px 85px;
     background-repeat: no-repeat, no-repeat;
     background-size: 600px, 400px;    
-    width: 1300px;
-    height: 600px;
+    min-width: 300px;
+    min-height: 300px;
 }
 @media(min-width:360px) and (max-width:480px){
     .backgroundgiflol{
-        background-image: url('../../../img/gifjhin.gif');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        margin: 0;
-        padding: 0;
-        min-height: 500px;
-        min-width: 400px;
+        background-size: 100% 400px;
+        min-height: 400px;
+        font-size: 3vw;
+        min-width: 300px;
+    }
+    .backgroundgiflol h1, h2{
+        font-size: 6vw;
     }
     .backgroundimagelol{
-        padding: 0;
-        text-align: center;
-        background-image: url('../../../img/league.png'), url('../../../img/nota1.png');
-        background-position: 690px 250px, 190px 170px;
-        background-repeat: no-repeat, no-repeat;
-        background-size: 600px, 400px;    
-        width: 1300px;
-        height: 600px;
+        background-size: 45% 170px;
+        background-position: 100px 0, -30px 0;
+    }
+    .navbar-logo_name{
+        max-width: 100%;
+        margin-left: -6%;
+        font-size: 4vw;
+    }
+    #EBA{
+        width: 74px;
+    }
+}
+@media (min-width:480px) and (max-width:700px){
+    .backgroundgiflol{
+        background-size: 100% 500px;
+        min-height: 500px;
+
+    }
+    .backgroundimagelol{
+        background-size: 35% 200px;
+        background-position: 200px 0, -20px 0;
+    }
+    #EBA{
+        width: 75px;
+    }
+}
+@media (min-width:700px) and (max-width:1000px){
+    .backgroundgiflol{
+        background-size: 100% 700px;
+        min-height: 650px;
+    }
+    .backgroundimagelol{
+        background-size: 38% 250px;
+        background-position: 240px 0, -30px 0;
+    }
+    #EBA{
+        width: 70px;
+    }
+}
+@media (min-width:1000px) and (max-width:1450px){
+    .backgroundgiflol{
+        background-size: 100% 900px;
+        min-height: 850px;
+
+    }
+    .backgroundimagelol{
+        background-size: 35% 250px;
+        background-position: 330px 0, -45px 0;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+}
+@media (min-width:1450px) and (max-width:1900px){
+    .backgroundgiflol{
+        background-size: 100% 1100px;
+        min-height: 1000px;
+    }
+    .backgroundimagelol{
+        background-size: 40% 400px;
+        min-height: 500px;
+        background-position: 510px 0, -60px 0;
     }
 }

@@ -2,3 +2,6 @@
     text-align: center;
     color: #ffffff;
 }
+.carousel-item{
+    backface-visibility: visible;
+}
